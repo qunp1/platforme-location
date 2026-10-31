@@ -1,3 +1,4 @@
+import { browserUrl } from '../navigation.js';
 import React from 'react';
 import { api } from '../api.js';
 import { Button, Icon } from '../ui.jsx';
@@ -74,7 +75,10 @@ export default function RequestList({ path, requests, busy, run, setUser, setReq
               </p>
             </details>
             {!selected && (
-              <a className="text-link" href={`/account/bookings/${encodeURIComponent(r.id)}`}>
+              <a
+                className="text-link"
+                href={browserUrl(`/account/bookings/${encodeURIComponent(r.id)}`)}
+              >
                 Voir le récapitulatif <Icon name="arrow" size="small" />
               </a>
             )}
@@ -92,7 +96,7 @@ export default function RequestList({ path, requests, busy, run, setUser, setReq
             : 'Vous n’avez pas encore de demande.'}
         </p>
       )}
-      <a href="/cars">Comparer les voitures</a>
+      <a href={browserUrl('/cars')}>Comparer les voitures</a>
       <Button
         variant="quiet"
         pending={busy}

@@ -1,3 +1,4 @@
+import { browserUrl } from './navigation.js';
 import SearchForm from './SearchForm.jsx';
 import React, { useState } from 'react';
 import { Button, Icon, Modal, Notice, EmptyState, Skeletons, CarPhoto } from './ui.jsx';
@@ -5,7 +6,7 @@ export default function DesignPage() {
   const [open, setOpen] = useState(false);
   return (
     <main className="container design-page">
-      <a className="text-link" href="/">
+      <a className="text-link" href={browserUrl('/')}>
         Retour au site
       </a>
       <h1>Nadorly · composants</h1>

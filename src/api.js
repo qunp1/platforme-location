@@ -1,4 +1,10 @@
+import { staticSite } from './navigation.js';
+
 export async function api(path, body) {
+  if (staticSite) {
+    if (path === '/health') return { configured: false };
+    throw new Error('Les comptes et demandes ne sont pas encore connectés.');
+  }
   let response;
   try {
     response = await fetch(`/api${path}`, {

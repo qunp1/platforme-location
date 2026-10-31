@@ -53,3 +53,15 @@ test('fuel and seats are validated and survive shared links',()=>{
  const invalid=parseRoute('/cars?fuel=electric&seats=9').filters;
  assert.equal(invalid.fuel,'all');assert.equal(invalid.seats,'all');
 });
+
+test('GitHub Pages links preserve the repository base and route parameters', async () => {
+  const { browserUrl, routeLocation } = await import('../src/navigation.js');
+  const route = '/cars/sandero?location=airport&fuel=diesel';
+  const href = browserUrl(route, '/platforme-location/', true);
+  assert.equal(href, '/platforme-location/#/cars/sandero?location=airport&fuel=diesel');
+  const restored = routeLocation(`https://qunp1.github.io${href}`, true);
+  assert.equal(restored.pathname, '/cars/sandero');
+  assert.equal(restored.searchParams.get('fuel'), 'diesel');
+  assert.equal(browserUrl(route, '/', false), route);
+  assert.equal(browserUrl('https://example.com', '/platforme-location/', true), 'https://example.com');
+});

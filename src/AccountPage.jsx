@@ -6,7 +6,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { api } from './api.js';
 import { Button, Notice } from './ui.jsx';
 import { quote } from './domain.js';
-import { makeUrl } from './navigation.js';
+import { browserUrl, routeLocation, makeUrl } from './navigation.js';
 import './styles/account.css';
 
 export function safeReturn(value) {
@@ -31,7 +31,7 @@ export default function AccountPage({ path, search, hasDates, cars, navigate, ti
   const [unavailable, setUnavailable] = useState(false),
     [retry, setRetry] = useState(0);
   const key = useRef(crypto.randomUUID());
-  const params = new URLSearchParams(location.search);
+  const params = routeLocation(location.href).searchParams;
   const vehicle = cars.find((c) => c.id === params.get('vehicle'));
   const isReview = path === '/requests/new';
   const isReset = path === '/account/reset-password';
@@ -133,11 +133,11 @@ export default function AccountPage({ path, search, hasDates, cars, navigate, ti
         </Notice>
         <Button onClick={() => setRetry((value) => value + 1)}>Réessayer</Button>
         <a
-          href={
+          href={browserUrl(
             isReview && vehicle
               ? makeUrl(`/cars/${vehicle.id}`, search)
-              : makeUrl('/cars', hasDates ? search : { location: search.location })
-          }
+              : makeUrl('/cars', hasDates ? search : { location: search.location }),
+          )}
         >
           Revenir aux voitures
         </a>
@@ -150,7 +150,9 @@ export default function AccountPage({ path, search, hasDates, cars, navigate, ti
           Les comptes et demandes ne sont pas encore connectés. La configuration du service est
           nécessaire. Aucune demande n’a été envoyée.
         </Notice>
-        <a href={isReview && vehicle ? makeUrl(`/cars/${vehicle.id}`, search) : '/cars'}>
+        <a
+          href={browserUrl(isReview && vehicle ? makeUrl(`/cars/${vehicle.id}`, search) : '/cars')}
+        >
           Revenir aux voitures
         </a>
       </>

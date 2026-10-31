@@ -1,3 +1,4 @@
+import { staticSite } from './navigation.js';
 import React, { useEffect, useRef } from 'react';
 import AnimatedDisclosure from './components/AnimatedDisclosure.jsx';
 import { locations, money, prettyDate, quote, validateSearch } from './domain.js';
@@ -60,7 +61,16 @@ export default function VehiclePage({
             {vehicle.verified === true ? ' · Véhicule vérifié' : ''}
           </p>
           <h1 {...titleProps}>{vehicle.name}</h1>
-          <a className="agency-profile-link" href="#agency-profile">
+          <a
+            className="agency-profile-link"
+            href="#agency-profile"
+            onClick={(event) => {
+              if (staticSite) {
+                event.preventDefault();
+                document.getElementById('agency-profile')?.scrollIntoView();
+              }
+            }}
+          >
             <span className="agency-mini-avatar" aria-hidden="true">
               {vehicle.agency.slice(0, 1)}
             </span>

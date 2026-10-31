@@ -48,3 +48,16 @@ Photos are model illustrations, not agency inventory. Sources, authors and licen
 are available in the interface footer and `assets/credits.json`. Working identity:
 `assets/brand/nadorly-kit-v2`. Active design: `replica/design/`. The first prototype's
 `docs/frontend-direction.md` and review remain historical records.
+
+## GitHub Pages
+
+The `.github/workflows/pages.yml` workflow builds and deploys the frontend on pushes
+to `main`. In repository **Settings → Pages**, select **GitHub Actions** as the
+source, then run **Actions → Deploy frontend to GitHub Pages → Run workflow** if
+necessary. The expected URL is https://qunp1.github.io/platforme-location/.
+
+The Pages build uses `VITE_STATIC_SITE=true pnpm build --base /platforme-location/`.
+Hash routes (for example `#/cars/sandero`) preserve refreshes and shared links on
+static hosting. Local development continues to use regular paths. Pages cannot
+run the Node API: accounts and requests explicitly remain unconfigured in this
+build. Deploy and connect a backend separately before enabling those features.

@@ -1,3 +1,4 @@
+import { browserUrl } from '../navigation.js';
 import React from 'react';
 import { Button, Notice } from '../ui.jsx';
 import { locations, money, prettyDate, validateSearch } from '../domain.js';
@@ -6,7 +7,7 @@ export default function RequestReview({ vehicle, estimate, search, submit, busy 
   return !vehicle || !estimate || validateSearch(search) ? (
     <Notice tone="error">
       Choisissez une offre et des dates valides avant de préparer votre demande.{' '}
-      <a href="/cars">Voir les voitures</a>
+      <a href={browserUrl('/cars')}>Voir les voitures</a>
     </Notice>
   ) : (
     <>

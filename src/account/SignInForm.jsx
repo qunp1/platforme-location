@@ -1,3 +1,4 @@
+import { browserUrl } from '../navigation.js';
 import React from 'react';
 import { Button } from '../ui.jsx';
 
@@ -46,7 +47,7 @@ export default function SignInForm({
       >
         {mode === 'sign-in' ? 'Créer un compte' : 'J’ai déjà un compte'}
       </Button>
-      <a href="/account/reset-password">Mot de passe oublié</a>
+      <a href={browserUrl('/account/reset-password')}>Mot de passe oublié</a>
     </>
   );
 }

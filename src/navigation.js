@@ -2,8 +2,23 @@ import { categories, defaultFilters, initialSearch, locations, rentalDays } from
 // Older shared links may contain local times; only their calendar dates matter.
 const dateOnly = (value) =>
   /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}$/.test(value || '') ? value.slice(0, 10) : value;
-export function parseRoute(input) {
+export const staticSite = import.meta.env?.VITE_STATIC_SITE === 'true';
+const deploymentBase = import.meta.env?.BASE_URL || '/';
+
+// Hash routes keep shared links and refreshes on GitHub Pages' index.html.
+export function browserUrl(path, base = deploymentBase, useHash = staticSite) {
+  return useHash && path.startsWith('/') && !path.startsWith('//') ? `${base}#${path}` : path;
+}
+export function routeLocation(input, useHash = staticSite) {
   const url = new URL(input, 'http://nadorly.local');
+  return useHash && url.hash.startsWith('#/')
+    ? new URL(url.hash.slice(1), url.origin)
+    : useHash && url.pathname === deploymentBase
+      ? new URL(`/${url.search}`, url.origin)
+      : url;
+}
+export function parseRoute(input) {
+  const url = routeLocation(input);
   const aliases = {
     '/voitures': '/cars',
     '/compte': '/account/bookings',

@@ -1,3 +1,4 @@
+import { browserUrl } from '../navigation.js';
 import React from 'react';
 import { api } from '../api.js';
 import { Button } from '../ui.jsx';
@@ -61,7 +62,7 @@ export default function PasswordResetForms({ run, setMessage, busy }) {
         </label>
         <Button pending={busy}>Modifier le mot de passe</Button>
       </form>
-      <a href="/account/sign-in">Revenir à la connexion</a>
+      <a href={browserUrl('/account/sign-in')}>Revenir à la connexion</a>
     </>
   );
 }

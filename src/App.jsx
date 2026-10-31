@@ -15,7 +15,7 @@ import SearchForm from './SearchForm.jsx';
 import { MobileFilters } from './Filters.jsx';
 import { CarPhoto, EmptyState, Modal, Skeletons } from './ui.jsx';
 import { defaultFilters, searchCars } from './domain.js';
-import { makeUrl, parseRoute } from './navigation.js';
+import { browserUrl, makeUrl, parseRoute } from './navigation.js';
 
 const CatalogStress = import.meta.env.DEV
   ? React.lazy(() => import('./dev/CatalogStress.jsx'))
@@ -33,7 +33,11 @@ export default function App() {
       setModal(null);
     };
     window.addEventListener('popstate', pop);
-    return () => window.removeEventListener('popstate', pop);
+    window.addEventListener('hashchange', pop);
+    return () => {
+      window.removeEventListener('popstate', pop);
+      window.removeEventListener('hashchange', pop);
+    };
   }, []);
   useEffect(() => {
     const titles = {
@@ -64,7 +68,7 @@ export default function App() {
   }, [route.path]);
   function navigate(href, { keepScroll = false } = {}) {
     history.replaceState({ ...history.state, scroll: window.scrollY }, '', location.href);
-    history.pushState({ scroll: 0 }, '', href);
+    history.pushState({ scroll: 0 }, '', browserUrl(href));
     const next = parseRoute(href);
     setRoute({ ...next, ...(keepScroll ? { restore: window.scrollY } : {}) });
     setModal(null);
@@ -76,7 +80,7 @@ export default function App() {
   function Link({ href, children, onClick, ...props }) {
     return (
       <a
-        href={href}
+        href={browserUrl(href)}
         {...props}
         onClick={(event) => {
           onClick?.(event);
