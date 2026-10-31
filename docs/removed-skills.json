@@ -1,0 +1,134 @@
+[
+  {
+    "repository": "anthropics/claude-plugins-official",
+    "revision": "d1adba47161a271799de7b548225d929310046bd",
+    "source_path": "plugins/claude-code-setup/skills/claude-automation-recommender",
+    "installed_path": ".agents/skills/claude-automation-recommender"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/browser-testing-with-devtools",
+    "installed_path": ".agents/skills/browser-testing-with-devtools"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/idea-refine",
+    "installed_path": ".agents/skills/idea-refine"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/interview-me",
+    "installed_path": ".agents/skills/interview-me"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/using-agent-skills",
+    "installed_path": ".agents/skills/using-agent-skills"
+  },
+  {
+    "repository": "usestrix/strix",
+    "revision": "fde37a149fc942dd107666441a1989f187d30c3b",
+    "source_path": "skills/api-security-testing",
+    "installed_path": ".agents/skills/api-security-testing"
+  },
+  {
+    "repository": "usestrix/strix",
+    "revision": "fde37a149fc942dd107666441a1989f187d30c3b",
+    "source_path": "skills/application-security-testing",
+    "installed_path": ".agents/skills/application-security-testing"
+  },
+  {
+    "repository": "usestrix/strix",
+    "revision": "fde37a149fc942dd107666441a1989f187d30c3b",
+    "source_path": "skills/ci-security-scanning-with-strix",
+    "installed_path": ".agents/skills/ci-security-scanning-with-strix"
+  },
+  {
+    "repository": "usestrix/strix",
+    "revision": "fde37a149fc942dd107666441a1989f187d30c3b",
+    "source_path": "skills/managed-pentesting-with-strix",
+    "installed_path": ".agents/skills/managed-pentesting-with-strix"
+  },
+  {
+    "repository": "usestrix/strix",
+    "revision": "fde37a149fc942dd107666441a1989f187d30c3b",
+    "source_path": "skills/web-app-penetration-testing",
+    "installed_path": ".agents/skills/web-app-penetration-testing"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/animate-expo",
+    "installed_path": ".agents/skills/animate-expo"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/write-swift",
+    "installed_path": ".agents/skills/write-swift"
+  },
+  {
+    "repository": "Leonxlnx/taste-skill",
+    "revision": "b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2",
+    "source_path": "skills/brutalist-skill",
+    "installed_path": ".agents/skills/brutalist-skill"
+  },
+  {
+    "repository": "Leonxlnx/taste-skill",
+    "revision": "b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2",
+    "source_path": "skills/gpt-tasteskill",
+    "installed_path": ".agents/skills/gpt-tasteskill"
+  },
+  {
+    "repository": "Leonxlnx/taste-skill",
+    "revision": "b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2",
+    "source_path": "skills/minimalist-skill",
+    "installed_path": ".agents/skills/minimalist-skill"
+  },
+  {
+    "repository": "Leonxlnx/taste-skill",
+    "revision": "b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2",
+    "source_path": "skills/redesign-skill",
+    "installed_path": ".agents/skills/redesign-skill"
+  },
+  {
+    "repository": "Leonxlnx/taste-skill",
+    "revision": "b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2",
+    "source_path": "skills/soft-skill",
+    "installed_path": ".agents/skills/soft-skill"
+  },
+  {
+    "repository": "Leonxlnx/taste-skill",
+    "revision": "b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2",
+    "source_path": "skills/stitch-skill",
+    "installed_path": ".agents/skills/stitch-skill"
+  },
+  {
+    "repository": "Leonxlnx/taste-skill",
+    "revision": "b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2",
+    "source_path": "skills/taste-skill-v1",
+    "installed_path": ".agents/skills/taste-skill-v1"
+  },
+  {
+    "repository": "Leonxlnx/taste-skill",
+    "revision": "b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2",
+    "source_path": "skills/taste-skill-v2-experimental",
+    "installed_path": ".agents/skills/taste-skill-v2-experimental"
+  },
+  {
+    "repository": "Leonxlnx/imagegen-skills",
+    "revision": "beb16b0d0f4dae9a6f5cb04ea41e97b93a54ab8e",
+    "source_path": "skills/imagegen-frontend-mobile",
+    "installed_path": ".agents/skills/imagegen-frontend-mobile"
+  },
+  {
+    "repository": "tojileon/ian-xiaohei-illustrations-en",
+    "revision": "18280fc475fbda00efc0da6608860d69028deb6a",
+    "source_path": "ian-xiaohei-illustrations",
+    "installed_path": ".agents/skills/ian-xiaohei-illustrations"
+  }
+]

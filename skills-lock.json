@@ -1,0 +1,468 @@
+[
+  {
+    "repository": "heygen-com/hyperframes",
+    "revision": "28f7ee456b8a1733aa0f7b60492a0c807f1aab3e",
+    "source_path": "skills/hyperframes",
+    "installed_path": ".agents/skills/hyperframes",
+    "skill_sha256_lf": "96f3793bd677dde345c5aca4aa6484334100a154e8a5d9e2ad07d69c9b9e2b0e"
+  },
+  {
+    "repository": "heygen-com/hyperframes",
+    "revision": "28f7ee456b8a1733aa0f7b60492a0c807f1aab3e",
+    "source_path": "skills/hyperframes-cli",
+    "installed_path": ".agents/skills/hyperframes-cli",
+    "skill_sha256_lf": "44a48ccfa4cbd4f4234f8306c96268a4be56a0f2376abedbf31d2167b3c21286"
+  },
+  {
+    "repository": "heygen-com/hyperframes",
+    "revision": "28f7ee456b8a1733aa0f7b60492a0c807f1aab3e",
+    "source_path": "skills/hyperframes-registry",
+    "installed_path": ".agents/skills/hyperframes-registry",
+    "skill_sha256_lf": "1c7b27632c9ea9febaafc2d9af073b377029f46be4bee70d75b5e713eb698423"
+  },
+  {
+    "repository": "heygen-com/hyperframes",
+    "revision": "28f7ee456b8a1733aa0f7b60492a0c807f1aab3e",
+    "source_path": "skills/media-use",
+    "installed_path": ".agents/skills/media-use",
+    "skill_sha256_lf": "ef3976a02ff516d8e5ed0b7fff19d4bbf9358264233bace33fdacaa3aa7f37de"
+  },
+  {
+    "repository": "latent-spaces/brag",
+    "revision": "669ab9286aa28b6c3ee30e75f181ee74319d012a",
+    "source_path": "skills/brag",
+    "installed_path": ".agents/skills/brag"
+  },
+  {
+    "repository": "greensock/gsap-skills",
+    "revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "source_path": "skills/gsap-core",
+    "installed_path": ".agents/skills/gsap-core"
+  },
+  {
+    "repository": "greensock/gsap-skills",
+    "revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "source_path": "skills/gsap-react",
+    "installed_path": ".agents/skills/gsap-react"
+  },
+  {
+    "repository": "greensock/gsap-skills",
+    "revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "source_path": "skills/gsap-timeline",
+    "installed_path": ".agents/skills/gsap-timeline"
+  },
+  {
+    "repository": "greensock/gsap-skills",
+    "revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "source_path": "skills/gsap-performance",
+    "installed_path": ".agents/skills/gsap-performance"
+  },
+  {
+    "repository": "nutlope/hallmark",
+    "revision": "7ec868225c6caa040558c321ee0fefa0e73f83a8",
+    "source_path": "skills/hallmark",
+    "installed_path": ".agents/skills/hallmark"
+  },
+  {
+    "repository": "emotixco/claude-skills-founder",
+    "revision": "a194aaa1919fffbb56b2dea27eaaeff0b3add2f3",
+    "source_path": "skills/user-interviews",
+    "installed_path": ".agents/skills/user-interviews",
+    "supporting_root": ".agents/founder"
+  },
+  {
+    "repository": "emotixco/claude-skills-founder",
+    "revision": "a194aaa1919fffbb56b2dea27eaaeff0b3add2f3",
+    "source_path": "skills/competitor-matrix",
+    "installed_path": ".agents/skills/competitor-matrix",
+    "supporting_root": ".agents/founder"
+  },
+  {
+    "repository": "emotixco/claude-skills-founder",
+    "revision": "a194aaa1919fffbb56b2dea27eaaeff0b3add2f3",
+    "source_path": "skills/go-to-market",
+    "installed_path": ".agents/skills/go-to-market",
+    "supporting_root": ".agents/founder"
+  },
+  {
+    "repository": "emotixco/claude-skills-founder",
+    "revision": "a194aaa1919fffbb56b2dea27eaaeff0b3add2f3",
+    "source_path": "skills/metrics-dashboard",
+    "installed_path": ".agents/skills/metrics-dashboard",
+    "supporting_root": ".agents/founder"
+  },
+  {
+    "repository": "Panniantong/Agent-Reach",
+    "revision": "94f06c1969dfc1834001269d79d3ad0972d9dee6",
+    "source_path": "agent_reach/skill",
+    "installed_path": ".agents/skills/agent-reach"
+  },
+  {
+    "repository": "morluto/rea",
+    "revision": "647717c050ff4dbaef83fb1c5555ef5c33979cd4",
+    "source_path": ".agents/skills/reverse-engineer-anything",
+    "installed_path": ".agents/skills/reverse-engineer-anything"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/api-and-interface-design",
+    "installed_path": ".agents/skills/api-and-interface-design"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/ci-cd-and-automation",
+    "installed_path": ".agents/skills/ci-cd-and-automation"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/code-review-and-quality",
+    "installed_path": ".agents/skills/code-review-and-quality"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/code-simplification",
+    "installed_path": ".agents/skills/code-simplification"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/constraint-driven-development",
+    "installed_path": ".agents/skills/constraint-driven-development"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/context-engineering",
+    "installed_path": ".agents/skills/context-engineering"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/debugging-and-error-recovery",
+    "installed_path": ".agents/skills/debugging-and-error-recovery"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/deprecation-and-migration",
+    "installed_path": ".agents/skills/deprecation-and-migration"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/documentation-and-adrs",
+    "installed_path": ".agents/skills/documentation-and-adrs"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/doubt-driven-development",
+    "installed_path": ".agents/skills/doubt-driven-development"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/frontend-ui-engineering",
+    "installed_path": ".agents/skills/frontend-ui-engineering"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/git-workflow-and-versioning",
+    "installed_path": ".agents/skills/git-workflow-and-versioning"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/incremental-implementation",
+    "installed_path": ".agents/skills/incremental-implementation"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/observability-and-instrumentation",
+    "installed_path": ".agents/skills/observability-and-instrumentation"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/performance-optimization",
+    "installed_path": ".agents/skills/performance-optimization"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/planning-and-task-breakdown",
+    "installed_path": ".agents/skills/planning-and-task-breakdown"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/security-and-hardening",
+    "installed_path": ".agents/skills/security-and-hardening"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/shipping-and-launch",
+    "installed_path": ".agents/skills/shipping-and-launch"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/source-driven-development",
+    "installed_path": ".agents/skills/source-driven-development"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/spec-driven-development",
+    "installed_path": ".agents/skills/spec-driven-development"
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "revision": "aeac41d4d005999432bb7312f7ff06383a91d59d",
+    "source_path": "skills/test-driven-development",
+    "installed_path": ".agents/skills/test-driven-development"
+  },
+  {
+    "repository": "usestrix/strix",
+    "revision": "fde37a149fc942dd107666441a1989f187d30c3b",
+    "source_path": "skills/find-security-vulnerabilities-in-code",
+    "installed_path": ".agents/skills/find-security-vulnerabilities-in-code"
+  },
+  {
+    "repository": "usestrix/strix",
+    "revision": "fde37a149fc942dd107666441a1989f187d30c3b",
+    "source_path": "skills/fix-security-vulnerabilities-with-strix",
+    "installed_path": ".agents/skills/fix-security-vulnerabilities-with-strix"
+  },
+  {
+    "repository": "usestrix/strix",
+    "revision": "fde37a149fc942dd107666441a1989f187d30c3b",
+    "source_path": "skills/owasp-top-10-testing",
+    "installed_path": ".agents/skills/owasp-top-10-testing"
+  },
+  {
+    "repository": "usestrix/strix",
+    "revision": "fde37a149fc942dd107666441a1989f187d30c3b",
+    "source_path": "skills/penetration-testing-with-strix",
+    "installed_path": ".agents/skills/penetration-testing-with-strix"
+  },
+  {
+    "repository": "kaankiziltug/logo-design-skill",
+    "revision": "0ecf52e9a4b3ac92b714f7cc6e3148ab8c774134",
+    "source_path": "skills/logo-design",
+    "installed_path": ".agents/skills/logo-design"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-architect",
+    "installed_path": ".agents/skills/replica-architect"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-backend",
+    "installed_path": ".agents/skills/replica-backend"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-brand",
+    "installed_path": ".agents/skills/replica-brand"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-build",
+    "installed_path": ".agents/skills/replica-build"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-deploy",
+    "installed_path": ".agents/skills/replica-deploy"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-design",
+    "installed_path": ".agents/skills/replica-design"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-diff",
+    "installed_path": ".agents/skills/replica-diff"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-entrepreneur",
+    "installed_path": ".agents/skills/replica-entrepreneur"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-launch",
+    "installed_path": ".agents/skills/replica-launch"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-recon",
+    "installed_path": ".agents/skills/replica-recon"
+  },
+  {
+    "repository": "Jakeschincariol/replica-skill",
+    "revision": "77c9436fb3d18c3d58169efb8caf4fe906b0dc51",
+    "source_path": "replica-test",
+    "installed_path": ".agents/skills/replica-test"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/animate",
+    "installed_path": ".agents/skills/animate"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/animation-performance",
+    "installed_path": ".agents/skills/animation-performance"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/animation-vocabulary",
+    "installed_path": ".agents/skills/animation-vocabulary"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/apple-design",
+    "installed_path": ".agents/skills/apple-design"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/ask-sonner",
+    "installed_path": ".agents/skills/ask-sonner"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/break-ui",
+    "installed_path": ".agents/skills/break-ui"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/emil-design-eng",
+    "installed_path": ".agents/skills/emil-design-eng"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/find-animation-opportunities",
+    "installed_path": ".agents/skills/find-animation-opportunities"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/improve-animations",
+    "installed_path": ".agents/skills/improve-animations"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/mobile-native",
+    "installed_path": ".agents/skills/mobile-native"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/pick-ui-library",
+    "installed_path": ".agents/skills/pick-ui-library"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/prototype",
+    "installed_path": ".agents/skills/prototype"
+  },
+  {
+    "repository": "emilkowalski/skills",
+    "revision": "2d228630ba1446365f614a108cb8252f1feda202",
+    "source_path": "skills/review-animations",
+    "installed_path": ".agents/skills/review-animations"
+  },
+  {
+    "repository": "pbakaus/impeccable",
+    "revision": "0665bd812ae0908fcab17b96fd4f840defb882d9",
+    "source_path": ".agents/skills/impeccable",
+    "installed_path": ".agents/skills/impeccable"
+  },
+  {
+    "repository": "Leonxlnx/taste-skill",
+    "revision": "b9ca2fd8047f4c72d7da90ebc1c1203e57c72cd2",
+    "source_path": "skills/taste-skill",
+    "installed_path": ".agents/skills/taste-skill"
+  },
+  {
+    "repository": "Leonxlnx/imagegen-skills",
+    "revision": "beb16b0d0f4dae9a6f5cb04ea41e97b93a54ab8e",
+    "source_path": "skills/brandkit",
+    "installed_path": ".agents/skills/brandkit"
+  },
+  {
+    "repository": "Leonxlnx/imagegen-skills",
+    "revision": "beb16b0d0f4dae9a6f5cb04ea41e97b93a54ab8e",
+    "source_path": "skills/image-to-code",
+    "installed_path": ".agents/skills/image-to-code"
+  },
+  {
+    "repository": "Leonxlnx/imagegen-skills",
+    "revision": "beb16b0d0f4dae9a6f5cb04ea41e97b93a54ab8e",
+    "source_path": "skills/imagegen-frontend-web",
+    "installed_path": ".agents/skills/imagegen-frontend-web"
+  },
+  {
+    "repository": "lackeyjb/playwright-skill",
+    "revision": "dd47a6a023e249eb1b36e9e943eab89d0900865d",
+    "source_path": "skills/playwright-skill",
+    "installed_path": ".agents/skills/playwright-skill"
+  },
+  {
+    "repository": "mattpocock/skills",
+    "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+    "source_path": "skills/productivity/grill-me",
+    "installed_path": ".agents/skills/grill-me"
+  },
+  {
+    "repository": "mattpocock/skills",
+    "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+    "source_path": "skills/productivity/grilling",
+    "installed_path": ".agents/skills/grilling"
+  },
+  {
+    "repository": "Graphify-Labs/graphify",
+    "revision": "b90b9df7949bd04a15b40a1624af85d0a9cfdf04",
+    "package": "graphifyy==0.9.93",
+    "source_path": "graphify/skill-agents.md",
+    "installed_path": ".agents/skills/graphify",
+    "installed_by": "graphify install --project --platform agents"
+  },
+  {
+    "repository": "haydenschmitty/floorplan",
+    "revision": "59a12f4374f29cee26b002f31dbf60cb6955a917",
+    "source_path": "skills/floorplan",
+    "installed_path": ".agents/skills/floorplan"
+  }
+]

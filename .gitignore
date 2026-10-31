@@ -1,0 +1,15 @@
+# Generated skill runtime files
+**/node_modules/
+**/__pycache__/
+*.pyc
+dist/
+.env
+.env.*
+!.env.example
+.taste-skill/inspect/
+.taste-skill/inspect-results/
+.pnpm-store/
+test-results/
+playwright-report/
+.tools/
+strix_runs/

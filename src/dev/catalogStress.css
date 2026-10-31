@@ -1,0 +1,36 @@
+.catalog-stress {
+  position: fixed;
+  z-index: 100;
+  bottom: 96px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100% - 24px);
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  font-size: 11px;
+}
+.catalog-stress legend {
+  background: var(--bg);
+  padding-inline: 6px;
+}
+.catalog-stress > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+}
+.catalog-stress button {
+  min-height: 44px;
+  padding: 4px 8px;
+  border: 0;
+  background: transparent;
+  border-radius: 8px;
+  color: var(--navy);
+}
+.catalog-stress button[aria-pressed='true'] {
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}

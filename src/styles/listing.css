@@ -1,0 +1,675 @@
+/* Vehicle listing: framed agency photography, comparable terms and a nearby booking card. */
+:root {
+  --radius-action: 999px;
+}
+body .button,
+body .requests-link,
+.offer-row .offer-price .listing-cta,
+.trip-band .trip-summary .button,
+.custom-sort .sort-select,
+.home-offers .section-heading > .text-link,
+.faq-section > div > .text-link,
+.vehicle-gallery .gallery-action {
+  border-radius: var(--radius-action);
+}
+.listing-detail {
+  padding-top: 24px;
+  padding-bottom: 56px;
+}
+.listing-detail .vehicle-heading {
+  display: block;
+  margin: 0 0 24px;
+}
+.vehicle-eyebrow {
+  color: var(--body-text);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.listing-detail .vehicle-heading h1 {
+  font-size: clamp(2rem, 3.2vw, 2.75rem);
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+.agency-profile-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--body-text);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+}
+.agency-profile-link strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+.agency-profile-link:hover strong {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.agency-mini-avatar {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--navy);
+  color: white;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+.agency-profile-link > .icon {
+  color: var(--navy);
+  flex-shrink: 0;
+}
+.listing-detail .vehicle-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+  margin-top: 0;
+}
+.listing-detail .vehicle-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.listing-detail .vehicle-gallery {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 12px;
+  box-shadow: var(--shadow-xs);
+  overflow: hidden;
+  margin: 0;
+}
+.listing-detail .vehicle-gallery > button {
+  display: block;
+  border: 0;
+  padding: 0;
+  border-radius: 16px;
+  background: var(--photo-surface);
+  width: 100%;
+  overflow: hidden;
+  cursor: zoom-in;
+  position: relative;
+}
+.vehicle-image-frame {
+  position: relative;
+  aspect-ratio: 16/10;
+  max-height: 440px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--photo-surface);
+}
+.listing-detail .vehicle-photo {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  min-height: 0;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
+}
+.listing-detail .vehicle-gallery .photo-fallback {
+  height: 100%;
+}
+.listing-detail .gallery-action {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  background: rgb(255 255 255 / 0.94);
+  backdrop-filter: blur(8px);
+  color: var(--text);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: var(--shadow-xs);
+  min-height: 36px;
+}
+.listing-detail .vehicle-gallery > button:hover .gallery-action {
+  background: white;
+}
+.listing-detail .vehicle-specs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: var(--navy);
+}
+.listing-detail .vehicle-specs .specs {
+  display: contents;
+}
+.listing-detail .vehicle-specs li,
+.listing-detail .vehicle-specs > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid var(--border);
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--navy);
+  box-shadow: var(--shadow-xs);
+  margin: 0;
+  list-style: none;
+}
+.listing-detail .vehicle-specs .icon {
+  color: var(--navy);
+  flex-shrink: 0;
+}
+.listing-detail .vehicle-conditions {
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  margin: 0;
+}
+.listing-detail .vehicle-conditions h2 {
+  font-size: 1.375rem;
+  margin-bottom: 8px;
+}
+.conditions-intro {
+  color: var(--body-text);
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+.listing-detail .terms-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+}
+.listing-detail .terms-grid > div {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.listing-detail .terms-grid dt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  color: var(--body-text);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+.term-icon {
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+  color: var(--navy);
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+}
+.listing-detail .terms-grid dd {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text);
+  margin: 0;
+}
+.listing-detail .terms-grid .term-note {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--body-text);
+  line-height: 1.6;
+}
+.listing-detail .detail-disclosure {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  margin: 16px 0 0;
+  padding: 0 20px;
+}
+.listing-detail .detail-disclosure summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  list-style: none;
+  cursor: pointer;
+  color: var(--text);
+}
+.listing-detail .detail-disclosure summary::-webkit-details-marker {
+  display: none;
+}
+.listing-detail .detail-disclosure summary > span {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: var(--bg);
+  border-radius: 50%;
+  color: var(--navy);
+  font-size: 1.125rem;
+}
+.listing-detail .detail-disclosure[data-expanded='true'] summary > span {
+  transform: rotate(45deg);
+}
+.listing-detail .detail-disclosure > div {
+  font-size: 0.8125rem;
+  color: var(--body-text);
+  padding-bottom: 20px;
+  display: grid;
+  gap: 12px;
+}
+.listing-detail .agency-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 0;
+  scroll-margin-top: 112px;
+}
+.listing-detail .agency-initial {
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: var(--navy);
+  color: white;
+  flex-shrink: 0;
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+.listing-detail .agency-detail h2 {
+  font-size: 1.125rem;
+  margin-bottom: 4px;
+}
+.agency-profile-meta {
+  font-size: 0.75rem;
+  color: var(--body-text);
+  margin-bottom: 12px;
+}
+.listing-detail .agency-detail p:last-child {
+  font-size: 0.8125rem;
+  color: var(--body-text);
+  line-height: 1.7;
+}
+.listing-detail .quote-panel {
+  position: static;
+  min-width: 0;
+  align-self: start;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 24px;
+  background: white;
+  box-shadow: 0 16px 40px -12px rgb(11 37 69 / 0.12);
+  scroll-margin-top: 104px;
+}
+.booking-price-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+.booking-daily,
+.listing-detail .booking-daily.quote-total {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+.booking-daily strong {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  font-weight: 800;
+  color: var(--navy);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.booking-daily > span {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+.acceptance-tag {
+  max-width: 135px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--navy);
+  font-size: 0.625rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 6px 10px;
+  text-align: center;
+}
+.booking-price-title {
+  font-size: 0.875rem;
+  margin-top: 12px;
+  font-weight: 600;
+  color: var(--body-text);
+}
+.reservation-controls {
+  border: 1px solid var(--border-input);
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 20px 0;
+  background: #faf8f5;
+}
+.reservation-controls button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 0;
+  background: transparent;
+  padding: 14px 16px;
+  text-align: left;
+  color: var(--text);
+  cursor: pointer;
+}
+.reservation-controls button:hover {
+  background: var(--bg);
+}
+.reservation-controls button:focus-visible {
+  outline-offset: -4px;
+}
+.reservation-controls button > span:first-child {
+  min-width: 0;
+}
+.reservation-controls .reservation-dates {
+  border-top: 1px solid var(--border-input);
+}
+.reservation-label {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--body-text);
+  margin-bottom: 6px;
+}
+.reservation-controls strong {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.reservation-edit {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6875rem;
+  color: var(--navy);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.reservation-controls small {
+  display: block;
+  font-size: 0.6875rem;
+  color: var(--body-text);
+  margin-top: 3px;
+}
+.listing-detail .quote-lines {
+  font-size: 0.8125rem;
+  margin: 0 0 20px;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+  border: 0;
+}
+.listing-detail .quote-lines > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+.listing-detail .quote-lines dd {
+  margin: 0;
+  white-space: nowrap;
+}
+.listing-detail .quote-lines .quote-total {
+  flex-direction: row;
+  margin: 0;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--border);
+  font-weight: 800;
+  color: var(--navy);
+  font-size: 0.9375rem;
+}
+.listing-detail .quote-lines .quote-total dd {
+  font-size: 1.375rem;
+  letter-spacing: var(--letter-tight);
+}
+.listing-detail .billing-note {
+  font-size: 0.8125rem;
+  line-height: 1.7;
+  margin: 0 0 20px;
+  color: var(--body-text);
+}
+.listing-detail .deposit-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 0;
+  background: var(--bg);
+  border-radius: 12px;
+  padding: 14px;
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--body-text);
+}
+.listing-detail .deposit-box > span {
+  line-height: 1.6;
+}
+.listing-detail .deposit-box small {
+  display: block;
+  font-size: 0.6875rem;
+}
+.listing-detail .deposit-box > strong {
+  white-space: nowrap;
+  font-size: 0.8125rem;
+  color: var(--navy);
+  font-variant-numeric: tabular-nums;
+}
+.listing-detail .booking-request {
+  margin-top: 16px;
+  background: var(--terracotta);
+  color: white;
+  padding: 16px;
+  min-height: 56px;
+  font-size: 1.1875rem;
+  font-weight: 800;
+  box-shadow: var(--shadow-card);
+  gap: 8px;
+}
+.listing-detail .booking-request:hover {
+  background: var(--terracotta-hover);
+}
+.listing-detail .quote-footnote {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6px;
+  text-align: center;
+  font-size: 0.6875rem;
+  line-height: 1.6;
+  color: var(--body-text);
+  margin: 12px 0 0;
+}
+.listing-detail .quote-footnote > .icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--navy);
+}
+@media (min-width: 1024px) {
+  .listing-detail .vehicle-layout {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  }
+  .listing-detail .quote-panel {
+    position: sticky;
+    top: 112px;
+  }
+  .listing-detail .mobile-quote-bar {
+    display: none;
+  }
+}
+@media (min-width: 1280px) {
+  .listing-detail .vehicle-layout {
+    grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+  }
+}
+@media (max-width: 1023px) {
+  .listing-detail .vehicle-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .listing-detail .vehicle-main {
+    display: contents;
+  }
+  .listing-detail .vehicle-gallery {
+    order: 0;
+    width: 100%;
+  }
+  .listing-detail .vehicle-specs {
+    order: 1;
+  }
+  .listing-detail .quote-panel {
+    order: 2;
+    width: 100%;
+  }
+  .listing-detail .vehicle-conditions {
+    order: 3;
+    width: 100%;
+  }
+  .listing-detail .agency-detail {
+    order: 4;
+    width: 100%;
+  }
+  .listing-detail .booking-price-header {
+    align-items: center;
+  }
+  .listing-detail .booking-price-title {
+    margin-top: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .listing-detail {
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
+  .listing-detail .vehicle-heading h1 {
+    font-size: 2rem;
+  }
+  .vehicle-eyebrow {
+    font-size: 0.625rem;
+  }
+  .agency-profile-link {
+    font-size: 0.75rem;
+    align-items: flex-start;
+  }
+  .agency-location {
+    display: block;
+  }
+  .listing-detail .vehicle-gallery {
+    padding: 8px;
+    border-radius: 20px;
+  }
+  .vehicle-image-frame {
+    border-radius: 12px;
+  }
+  .listing-detail .gallery-action {
+    right: 8px;
+    bottom: 8px;
+    font-size: 0.6875rem;
+    padding: 6px 10px;
+  }
+  .listing-detail .vehicle-specs {
+    gap: 6px;
+  }
+  .listing-detail .vehicle-specs li,
+  .listing-detail .vehicle-specs > span {
+    font-size: 0.75rem;
+    padding: 8px 10px;
+    gap: 6px;
+  }
+  .listing-detail .terms-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .listing-detail .terms-grid > div {
+    padding: 20px;
+  }
+  .listing-detail .terms-grid dt {
+    flex-direction: row;
+    align-items: center;
+  }
+  .listing-detail .terms-grid dd {
+    padding-left: 52px;
+  }
+  .listing-detail .quote-panel {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .booking-daily strong {
+    font-size: 1.75rem;
+  }
+  .acceptance-tag {
+    max-width: 120px;
+    font-size: 0.5625rem;
+  }
+  .reservation-controls button {
+    padding: 14px 12px;
+  }
+  .reservation-edit {
+    font-size: 0.625rem;
+  }
+  .listing-detail .agency-detail {
+    padding: 20px;
+    gap: 12px;
+  }
+  .listing-detail .detail-disclosure {
+    padding-inline: 16px;
+  }
+  .listing-detail .detail-disclosure summary {
+    font-size: 0.8125rem;
+  }
+  .listing-detail .mobile-quote-bar {
+    z-index: 25;
+  }
+  .listing-detail .booking-request {
+    font-size: 1.1875rem;
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .listing-detail .gallery-action {
+    background: white;
+    backdrop-filter: none;
+  }
+}

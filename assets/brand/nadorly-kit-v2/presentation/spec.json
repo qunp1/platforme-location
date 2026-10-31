@@ -1,0 +1,46 @@
+{
+  "brand": "Nadorly",
+  "brief": "A car-rental marketplace connecting local agencies in Nador with visitors returning from abroad. Illustrative applications only; no live partner claims.",
+  "adjectives": [
+    "welcoming",
+    "dependable",
+    "local",
+    "clear"
+  ],
+  "criteria": "The chosen B2 arrival gate, in a practical working identity.",
+  "industry": "services",
+  "mockups": [
+    "website",
+    "app-icon",
+    "signage",
+    "business-card",
+    "social",
+    "favicon-tab"
+  ],
+  "nav": [
+    "Find a car",
+    "How it works",
+    "Help"
+  ],
+  "brand_color": "#155F8A",
+  "greyscale": false,
+  "round": 5,
+  "concepts": [
+    {
+      "name": "The arrival gate \u2014 B2",
+      "symbol": "../svg/nadorly-symbol-blue.svg",
+      "lockup": "../svg/nadorly-horizontal-blue.svg",
+      "idea": "A car and a welcoming entrance share one clear silhouette.",
+      "rationale": [
+        "An arrival in Nador, not just a vehicle.",
+        "Works as one colour and as a compact icon.",
+        "Outlined lettering and a dedicated small-size cut."
+      ]
+    }
+  ],
+  "recommendation": "Selected B2 logo and coastal-blue palette, working version 2.",
+  "next_steps": [
+    "Review the selected colours in real-world applications",
+    "Refine any details before release"
+  ]
+}

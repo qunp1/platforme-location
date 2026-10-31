@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.agents/
+.tools/
+.hallmark/
+.taste-skill/
+assets/
+replica/clone-screens/
+replica/screens/
+test-results/
+playwright-report/
+pnpm-lock.yaml

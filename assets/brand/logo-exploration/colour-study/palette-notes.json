@@ -1,0 +1,33 @@
+{
+  "status": "Colour proposals, not approved",
+  "logo": "Earlier B2, Softer arrival",
+  "recommendation": "B \u2014 Coastal blue",
+  "contrast_primary_on_light": {
+    "A": 6.61,
+    "B": 6.2,
+    "C": 5.5
+  },
+  "palettes": [
+    {
+      "code": "A",
+      "name": "Original green",
+      "primary": "#315F53",
+      "light": "#F9F4E7",
+      "ink": "#17201B"
+    },
+    {
+      "code": "B",
+      "name": "Coastal blue",
+      "primary": "#155F8A",
+      "light": "#F7F2E8",
+      "ink": "#142D3B"
+    },
+    {
+      "code": "C",
+      "name": "Lagoon teal",
+      "primary": "#0D6C73",
+      "light": "#F5F2E9",
+      "ink": "#153538"
+    }
+  ]
+}
